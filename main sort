@@ -1,0 +1,9 @@
+mainlist = [12, 64, 35, 8, 90, 23, 45]
+
+n = len(mainlist)
+for i in range(n - 1):
+    for j in range(n - i - 1):
+        if mainlist[j] > mainlist[j + 1]:
+            mainlist[j], mainlist[j + 1] = mainlist[j + 1], mainlist[j]
+
+print("sorted list is:", mainlist)
